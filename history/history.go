@@ -42,14 +42,14 @@ type HistoryItem struct {
 
 // Feedback represents user feedback on a history item
 type Feedback struct {
-	ThumbsUp         bool   `json:"thumbs_up"`
-	Feedback         string `json:"feedback,omitempty"`
-	Emotions         bool   `json:"emotions,omitempty"`
-	InaccurateClone  bool   `json:"inaccurate_clone,omitempty"`
-	Glitches         bool   `json:"glitches,omitempty"`
-	AudioQuality     bool   `json:"audio_quality,omitempty"`
-	Other            bool   `json:"other,omitempty"`
-	ReviewStatus     string `json:"review_status,omitempty"`
+	ThumbsUp        bool   `json:"thumbs_up"`
+	Feedback        string `json:"feedback,omitempty"`
+	Emotions        bool   `json:"emotions,omitempty"`
+	InaccurateClone bool   `json:"inaccurate_clone,omitempty"`
+	Glitches        bool   `json:"glitches,omitempty"`
+	AudioQuality    bool   `json:"audio_quality,omitempty"`
+	Other           bool   `json:"other,omitempty"`
+	ReviewStatus    string `json:"review_status,omitempty"`
 }
 
 // Alignments contains character timing alignments
@@ -67,9 +67,9 @@ type Alignment struct {
 
 // ListHistoryResponse contains a list of history items
 type ListHistoryResponse struct {
-	History          []HistoryItem `json:"history"`
+	History           []HistoryItem `json:"history"`
 	LastHistoryItemID string        `json:"last_history_item_id"`
-	HasMore          bool          `json:"has_more"`
+	HasMore           bool          `json:"has_more"`
 }
 
 // ListOptions contains optional parameters for listing history

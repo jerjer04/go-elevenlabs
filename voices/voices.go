@@ -27,25 +27,25 @@ type VoiceSettings struct {
 
 // Voice represents a voice in the ElevenLabs system
 type Voice struct {
-	VoiceID                  string                `json:"voice_id"`
-	Name                     string                `json:"name"`
-	Samples                  []Sample              `json:"samples,omitempty"`
-	Category                 string                `json:"category"`
-	FineTuning               *FineTuning           `json:"fine_tuning,omitempty"`
-	Labels                   map[string]string     `json:"labels,omitempty"`
-	Description              string                `json:"description,omitempty"`
-	PreviewURL               string                `json:"preview_url,omitempty"`
-	AvailableForTiers        []string              `json:"available_for_tiers,omitempty"`
-	Settings                 *VoiceSettings        `json:"settings,omitempty"`
-	Sharing                  *SharingSettings      `json:"sharing,omitempty"`
-	HighQualityBaseModelIDs  []string              `json:"high_quality_base_model_ids,omitempty"`
-	SafetyControl            string                `json:"safety_control,omitempty"`
-	VoiceVerification        *VoiceVerification    `json:"voice_verification,omitempty"`
-	PermissionOnResource     string                `json:"permission_on_resource,omitempty"`
-	IsOwner                  bool                  `json:"is_owner,omitempty"`
-	IsLegacy                 bool                  `json:"is_legacy,omitempty"`
-	IsMixed                  bool                  `json:"is_mixed,omitempty"`
-	CreatedAtUnix            int64                 `json:"created_at_unix,omitempty"`
+	VoiceID                 string             `json:"voice_id"`
+	Name                    string             `json:"name"`
+	Samples                 []Sample           `json:"samples,omitempty"`
+	Category                string             `json:"category"`
+	FineTuning              *FineTuning        `json:"fine_tuning,omitempty"`
+	Labels                  map[string]string  `json:"labels,omitempty"`
+	Description             string             `json:"description,omitempty"`
+	PreviewURL              string             `json:"preview_url,omitempty"`
+	AvailableForTiers       []string           `json:"available_for_tiers,omitempty"`
+	Settings                *VoiceSettings     `json:"settings,omitempty"`
+	Sharing                 *SharingSettings   `json:"sharing,omitempty"`
+	HighQualityBaseModelIDs []string           `json:"high_quality_base_model_ids,omitempty"`
+	SafetyControl           string             `json:"safety_control,omitempty"`
+	VoiceVerification       *VoiceVerification `json:"voice_verification,omitempty"`
+	PermissionOnResource    string             `json:"permission_on_resource,omitempty"`
+	IsOwner                 bool               `json:"is_owner,omitempty"`
+	IsLegacy                bool               `json:"is_legacy,omitempty"`
+	IsMixed                 bool               `json:"is_mixed,omitempty"`
+	CreatedAtUnix           int64              `json:"created_at_unix,omitempty"`
 }
 
 // Sample represents an audio sample for a voice
@@ -59,39 +59,39 @@ type Sample struct {
 
 // FineTuning contains voice fine-tuning information
 type FineTuning struct {
-	IsAllowedToFineTune               bool                    `json:"is_allowed_to_fine_tune"`
-	FinetuningState                   string                  `json:"finetuning_state,omitempty"`
-	VerificationFailures              []string                `json:"verification_failures,omitempty"`
-	VerificationAttemptsCount         int                     `json:"verification_attempts_count"`
-	ManualVerificationRequested       bool                    `json:"manual_verification_requested"`
-	Language                          string                  `json:"language,omitempty"`
-	Progress                          map[string]interface{}  `json:"progress,omitempty"`
-	Message                           map[string]interface{}  `json:"message,omitempty"`
-	DatasetDurationSeconds            float64                 `json:"dataset_duration_seconds,omitempty"`
-	VerificationAttempts              []VerificationAttempt   `json:"verification_attempts,omitempty"`
-	SliceIDs                          []string                `json:"slice_ids,omitempty"`
-	ManualVerification                *ManualVerification     `json:"manual_verification,omitempty"`
-	MaxVerificationAttempts           int                     `json:"max_verification_attempts,omitempty"`
-	NextMaxVerificationAttemptsResetUnixMs int64              `json:"next_max_verification_attempts_reset_unix_ms,omitempty"`
+	IsAllowedToFineTune                    bool                   `json:"is_allowed_to_fine_tune"`
+	FinetuningState                        string                 `json:"finetuning_state,omitempty"`
+	VerificationFailures                   []string               `json:"verification_failures,omitempty"`
+	VerificationAttemptsCount              int                    `json:"verification_attempts_count"`
+	ManualVerificationRequested            bool                   `json:"manual_verification_requested"`
+	Language                               string                 `json:"language,omitempty"`
+	Progress                               map[string]interface{} `json:"progress,omitempty"`
+	Message                                map[string]interface{} `json:"message,omitempty"`
+	DatasetDurationSeconds                 float64                `json:"dataset_duration_seconds,omitempty"`
+	VerificationAttempts                   []VerificationAttempt  `json:"verification_attempts,omitempty"`
+	SliceIDs                               []string               `json:"slice_ids,omitempty"`
+	ManualVerification                     *ManualVerification    `json:"manual_verification,omitempty"`
+	MaxVerificationAttempts                int                    `json:"max_verification_attempts,omitempty"`
+	NextMaxVerificationAttemptsResetUnixMs int64                  `json:"next_max_verification_attempts_reset_unix_ms,omitempty"`
 }
 
 // VerificationAttempt represents a voice verification attempt
 type VerificationAttempt struct {
-	Text                 string     `json:"text"`
-	DateUnix             int64      `json:"date_unix"`
-	Accepted             bool       `json:"accepted"`
-	Similarity           float64    `json:"similarity"`
-	LevenshteinDistance  float64    `json:"levenshtein_distance"`
-	Recording            *Recording `json:"recording,omitempty"`
+	Text                string     `json:"text"`
+	DateUnix            int64      `json:"date_unix"`
+	Accepted            bool       `json:"accepted"`
+	Similarity          float64    `json:"similarity"`
+	LevenshteinDistance float64    `json:"levenshtein_distance"`
+	Recording           *Recording `json:"recording,omitempty"`
 }
 
 // Recording represents an audio recording
 type Recording struct {
-	RecordingID      string `json:"recording_id"`
-	MimeType         string `json:"mime_type"`
-	SizeBytes        int    `json:"size_bytes"`
-	UploadDateUnix   int64  `json:"upload_date_unix"`
-	Transcription    string `json:"transcription,omitempty"`
+	RecordingID    string `json:"recording_id"`
+	MimeType       string `json:"mime_type"`
+	SizeBytes      int    `json:"size_bytes"`
+	UploadDateUnix int64  `json:"upload_date_unix"`
+	Transcription  string `json:"transcription,omitempty"`
 }
 
 // ManualVerification contains manual verification information
@@ -112,51 +112,51 @@ type File struct {
 
 // SharingSettings contains voice sharing configuration
 type SharingSettings struct {
-	Status                   string            `json:"status"`
-	HistoryItemSampleID      string            `json:"history_item_sample_id,omitempty"`
-	DateUnix                 int64             `json:"date_unix,omitempty"`
-	WhitelistedEmails        []string          `json:"whitelisted_emails,omitempty"`
-	PublicOwnerID            string            `json:"public_owner_id,omitempty"`
-	OriginalVoiceID          string            `json:"original_voice_id,omitempty"`
-	FinancialRewardsEnabled  bool              `json:"financial_rewards_enabled,omitempty"`
-	FreeUsersAllowed         bool              `json:"free_users_allowed,omitempty"`
-	LiveModerationEnabled    bool              `json:"live_moderation_enabled,omitempty"`
-	Rate                     float64           `json:"rate,omitempty"`
-	NoticePeriod             int               `json:"notice_period,omitempty"`
-	DisableAtUnix            int64             `json:"disable_at_unix,omitempty"`
-	VoiceMixingAllowed       bool              `json:"voice_mixing_allowed,omitempty"`
-	Featured                 bool              `json:"featured,omitempty"`
-	Category                 string            `json:"category,omitempty"`
-	ReaderAppEnabled         bool              `json:"reader_app_enabled,omitempty"`
-	ImageURL                 string            `json:"image_url,omitempty"`
-	BanReason                string            `json:"ban_reason,omitempty"`
-	LikedByCount             int               `json:"liked_by_count,omitempty"`
-	ClonedByCount            int               `json:"cloned_by_count,omitempty"`
-	Name                     string            `json:"name,omitempty"`
-	Description              string            `json:"description,omitempty"`
-	Labels                   map[string]string `json:"labels,omitempty"`
-	ReviewStatus             string            `json:"review_status,omitempty"`
-	ReviewMessage            string            `json:"review_message,omitempty"`
-	EnabledInLibrary         bool              `json:"enabled_in_library,omitempty"`
-	InstagramUsername        string            `json:"instagram_username,omitempty"`
-	TwitterUsername          string            `json:"twitter_username,omitempty"`
-	YouTubeUsername          string            `json:"youtube_username,omitempty"`
-	TikTokUsername           string            `json:"tiktok_username,omitempty"`
-	ModerationCheck          *ModerationCheck  `json:"moderation_check,omitempty"`
-	ReaderRestrictedOn       []ResourceRestriction `json:"reader_restricted_on,omitempty"`
+	Status                  string                `json:"status"`
+	HistoryItemSampleID     string                `json:"history_item_sample_id,omitempty"`
+	DateUnix                int64                 `json:"date_unix,omitempty"`
+	WhitelistedEmails       []string              `json:"whitelisted_emails,omitempty"`
+	PublicOwnerID           string                `json:"public_owner_id,omitempty"`
+	OriginalVoiceID         string                `json:"original_voice_id,omitempty"`
+	FinancialRewardsEnabled bool                  `json:"financial_rewards_enabled,omitempty"`
+	FreeUsersAllowed        bool                  `json:"free_users_allowed,omitempty"`
+	LiveModerationEnabled   bool                  `json:"live_moderation_enabled,omitempty"`
+	Rate                    float64               `json:"rate,omitempty"`
+	NoticePeriod            int                   `json:"notice_period,omitempty"`
+	DisableAtUnix           int64                 `json:"disable_at_unix,omitempty"`
+	VoiceMixingAllowed      bool                  `json:"voice_mixing_allowed,omitempty"`
+	Featured                bool                  `json:"featured,omitempty"`
+	Category                string                `json:"category,omitempty"`
+	ReaderAppEnabled        bool                  `json:"reader_app_enabled,omitempty"`
+	ImageURL                string                `json:"image_url,omitempty"`
+	BanReason               string                `json:"ban_reason,omitempty"`
+	LikedByCount            int                   `json:"liked_by_count,omitempty"`
+	ClonedByCount           int                   `json:"cloned_by_count,omitempty"`
+	Name                    string                `json:"name,omitempty"`
+	Description             string                `json:"description,omitempty"`
+	Labels                  map[string]string     `json:"labels,omitempty"`
+	ReviewStatus            string                `json:"review_status,omitempty"`
+	ReviewMessage           string                `json:"review_message,omitempty"`
+	EnabledInLibrary        bool                  `json:"enabled_in_library,omitempty"`
+	InstagramUsername       string                `json:"instagram_username,omitempty"`
+	TwitterUsername         string                `json:"twitter_username,omitempty"`
+	YouTubeUsername         string                `json:"youtube_username,omitempty"`
+	TikTokUsername          string                `json:"tiktok_username,omitempty"`
+	ModerationCheck         *ModerationCheck      `json:"moderation_check,omitempty"`
+	ReaderRestrictedOn      []ResourceRestriction `json:"reader_restricted_on,omitempty"`
 }
 
 // ModerationCheck contains moderation check results
 type ModerationCheck struct {
-	DateCheckedUnix     int64     `json:"date_checked_unix"`
-	NameValue           string    `json:"name_value"`
-	NameCheck           bool      `json:"name_check"`
-	DescriptionValue    string    `json:"description_value"`
-	DescriptionCheck    bool      `json:"description_check"`
-	SampleIDs           []string  `json:"sample_ids,omitempty"`
-	SampleChecks        []float64 `json:"sample_checks,omitempty"`
-	CaptchaIDs          []string  `json:"captcha_ids,omitempty"`
-	CaptchaChecks       []float64 `json:"captcha_checks,omitempty"`
+	DateCheckedUnix  int64     `json:"date_checked_unix"`
+	NameValue        string    `json:"name_value"`
+	NameCheck        bool      `json:"name_check"`
+	DescriptionValue string    `json:"description_value"`
+	DescriptionCheck bool      `json:"description_check"`
+	SampleIDs        []string  `json:"sample_ids,omitempty"`
+	SampleChecks     []float64 `json:"sample_checks,omitempty"`
+	CaptchaIDs       []string  `json:"captcha_ids,omitempty"`
+	CaptchaChecks    []float64 `json:"captcha_checks,omitempty"`
 }
 
 // ResourceRestriction represents a resource restriction

@@ -29,9 +29,9 @@ type VoiceSettings struct {
 
 // ConvertRequest contains parameters for text-to-speech conversion
 type ConvertRequest struct {
-	Text                       string                  `json:"text"`
-	ModelID                    string                  `json:"model_id,omitempty"`
-	VoiceSettings              *VoiceSettings          `json:"voice_settings,omitempty"`
+	Text                            string                     `json:"text"`
+	ModelID                         string                     `json:"model_id,omitempty"`
+	VoiceSettings                   *VoiceSettings             `json:"voice_settings,omitempty"`
 	PronunciationDictionaryLocators []PronunciationDictLocator `json:"pronunciation_dictionary_locators,omitempty"`
 }
 
@@ -49,14 +49,14 @@ type ConvertOptions struct {
 
 // WithTimestampsResponse contains audio data with character timing information
 type WithTimestampsResponse struct {
-	AudioBase64 string      `json:"audio_base64"`
-	Alignment   Alignment   `json:"alignment"`
+	AudioBase64         string     `json:"audio_base64"`
+	Alignment           Alignment  `json:"alignment"`
 	NormalizedAlignment *Alignment `json:"normalized_alignment,omitempty"`
 }
 
 // Alignment contains character-level timing information
 type Alignment struct {
-	Characters               []string  `json:"characters"`
+	Characters              []string  `json:"characters"`
 	CharacterStartTimesSecs []float64 `json:"character_start_times_seconds"`
 	CharacterEndTimesSecs   []float64 `json:"character_end_times_seconds"`
 }
