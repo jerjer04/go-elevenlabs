@@ -44,7 +44,7 @@ go get github.com/dhia-gharsallaoui/go-elevenlabs
 ```
 
 **Requirements:**
-- Go 1.18 or higher
+- Go 1.25 or higher
 - ElevenLabs API key ([Sign up here](https://elevenlabs.io))
 
 ## Quick Start
